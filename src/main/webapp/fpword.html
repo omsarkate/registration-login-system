@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password - Om's Codinghub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .reset-password-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .reset-password-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .reset-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #FF5733;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .reset-btn:hover {
+            background-color: #E6452E;
+        }
+
+        .back-to-login {
+            text-align: center;
+            display: block;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+            text-decoration: none;
+        }
+
+        .back-to-login:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="reset-password-container">
+        <h2>Reset Password</h2>
+        <form action="fpword" method="POST">
+            <div class="input-group">
+                <label for="email">Enter your Email:</label>
+                <input type="email" id="email" name="mail" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Enter New Password:</label>
+                <input type="password" id="password" name="pword" required>
+            </div>
+            <button type="submit" class="reset-btn">Reset</button>
+            <a href="login.html" class="back-to-login">Back to Login</a>
+        </form>
+    </div>
+</body>
+</html>
